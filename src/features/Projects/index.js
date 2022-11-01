@@ -25,9 +25,9 @@ const Projects = () => (
                 <TileDescription>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</TileDescription>
                 <LinkContainer>
                     <TileSpan>Demo: </TileSpan>
-                    <TileLink>https://link.demo.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.demo.com</TileLink>
                     <TileSpan>Code: </TileSpan>
-                    <TileLink>https://link.code.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.code.com</TileLink>
                 </LinkContainer>
             </SmallTile>
             <SmallTile>
@@ -35,9 +35,9 @@ const Projects = () => (
                 <TileDescription>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</TileDescription>
                 <LinkContainer>
                     <TileSpan>Demo: </TileSpan>
-                    <TileLink>https://link.demo.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.demo.com</TileLink>
                     <TileSpan>Code: </TileSpan>
-                    <TileLink>https://link.code.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.code.com</TileLink>
                 </LinkContainer>
             </SmallTile>
             <SmallTile>
@@ -45,9 +45,9 @@ const Projects = () => (
                 <TileDescription>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</TileDescription>
                 <LinkContainer>
                     <TileSpan>Demo: </TileSpan>
-                    <TileLink>https://link.demo.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.demo.com</TileLink>
                     <TileSpan>Code: </TileSpan>
-                    <TileLink>https://link.code.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.code.com</TileLink>
                 </LinkContainer>
             </SmallTile>
             <SmallTile>
@@ -55,9 +55,9 @@ const Projects = () => (
                 <TileDescription>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</TileDescription>
                 <LinkContainer>
                     <TileSpan>Demo: </TileSpan>
-                    <TileLink>https://link.demo.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.demo.com</TileLink>
                     <TileSpan>Code: </TileSpan>
-                    <TileLink>https://link.code.com</TileLink>
+                    <TileLink rel="noopener noreferrer" target="_blank">https://link.code.com</TileLink>
                 </LinkContainer>
             </SmallTile>
         </ProjectTiles>
