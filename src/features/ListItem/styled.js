@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ListItem = styled.li`
     display: flex;
+    color: #6E7E91;
     font-size: 18px;
     line-height: 1.4;
 `;

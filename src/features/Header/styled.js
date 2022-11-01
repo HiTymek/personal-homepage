@@ -6,6 +6,7 @@ export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr; 
     margin-bottom: 63px;
+    color: #6E7E91;
 `;
 
 export const Photo = styled.div`
@@ -27,7 +28,8 @@ export const ThisIs = styled.span`
     line-height: 1.3;
 `;
 
-export const Title = styled.h1`
+export const Name = styled.h1`
+    color: #252525;
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
