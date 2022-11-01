@@ -4,6 +4,7 @@ import BigTile from "./common/BigTile/index";
 import SkillList from "./features/SkillList";
 import NextToLearn from "./features/NextToLearn";
 import Projects from "./features/Projects";
+import Footer from "./features/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         content={<NextToLearn />}
       />
       <Projects />
+      <Footer />
     </Container>
   );
 };

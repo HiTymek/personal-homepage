@@ -1,4 +1,4 @@
-import github from "../../common/icons/github.svg";
+import { ReactComponent as Github } from "../../common/icons/github.svg";
 import {
     Container,
     Header,
@@ -15,7 +15,7 @@ import {
 const Projects = () => (
     <>
         <Container>
-            <img src={github} alt="Github icon" />
+            <Github />
             <Header>Portfolio</Header>
             <SubHeader>My recent projects</SubHeader>
         </Container>
