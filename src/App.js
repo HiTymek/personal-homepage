@@ -3,6 +3,7 @@ import { Container } from "./features/Container/styled";
 import BigTile from "./common/BigTile/index";
 import SkillList from "./features/SkillList";
 import NextToLearn from "./features/NextToLearn";
+import Projects from "./features/Projects";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         title="What I want to learn next 🚀"
         content={<NextToLearn />}
       />
+      <Projects />
     </Container>
   );
 };
