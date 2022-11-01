@@ -1,4 +1,4 @@
-import { ListItem, Dot } from "./styled";
+import { ListItem, Dot } from "../ListItem/styled";
 
 const SkillList = () => (
     <>

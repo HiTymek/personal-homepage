@@ -1,15 +1,20 @@
 import Header from "./features/Header";
 import { Container } from "./features/Container/styled";
-import Tile from "./features/Tile";
+import BigTile from "./common/BigTile/index";
 import SkillList from "./features/SkillList";
+import NextToLearn from "./features/NextToLearn";
 
 function App() {
   return (
     <Container>
       <Header />
-      <Tile
+      <BigTile
         title="My skillset includes 🛠️"
         content={<SkillList />}
+      />
+      <BigTile
+        title="What I want to learn next 🚀"
+        content={<NextToLearn />}
       />
     </Container>
   );
