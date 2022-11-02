@@ -6,7 +6,7 @@ export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr; 
     margin-bottom: 63px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.color.text};
 `;
 
 export const Photo = styled.div`
@@ -32,7 +32,7 @@ export const ThisIs = styled.span`
 `;
 
 export const Name = styled.h1`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.color.title};
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
