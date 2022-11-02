@@ -19,10 +19,13 @@ export const Photo = styled.div`
 `;
 
 export const Content = styled.div`
-    margin: 63px 66px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 66px;
 `;
 
 export const ThisIs = styled.span`
+    margin-top: 38px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
@@ -33,10 +36,11 @@ export const Name = styled.h1`
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
+    margin: 12px 0 35px 0;
 `;
 
 export const AboutMe = styled.p`
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;

@@ -1,3 +1,5 @@
+import ThemeButton from "../ThemeButton/index";
+
 import {
     Wrapper,
     ThisIs,
@@ -12,6 +14,7 @@ const Header = () => (
     <Wrapper>
         <Photo />
         <Content>
+            <ThemeButton />
             <ThisIs>THIS IS</ThisIs>
             <Name>Tymoteusz Wójcik</Name>
             <AboutMe>👨🏻‍💼👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities. </AboutMe>
