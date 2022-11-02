@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     max-width: 50%;
     margin: 120px 0 120px 0;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.mineShaft};
 `;
 
 export const LetsTalk = styled.p`
-    color: #6E7E91;
+    color: ${({ theme }) => theme.colors.slateGray};
     font-weight: 700;
     font-size: 12px;
     line-height: 1.3;
@@ -19,7 +19,7 @@ export const Mail = styled.a`
     font-weight: 900;
     font-size: 32px;
     line-height: 39px;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.mineShaft};
     text-decoration: none;
 `;
 

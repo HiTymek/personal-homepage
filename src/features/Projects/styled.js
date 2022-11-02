@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     text-align: center;
     margin: 72px 0 24px 0;
-    color: #252525;
+    color: ${({ theme }) => theme.colors.mineShaft};
 `;
 
 export const Header = styled.h2`
@@ -26,8 +26,8 @@ export const ProjectTiles = styled.section`
 `;
 
 export const SmallTile = styled.div`
-    background: #FFFFFF; 
-    color: #6E7E91;   
+    background-color: ${({ theme }) => theme.colors.white}; 
+    color: ${({ theme }) => theme.colors.slateGray};   
     border: 6px solid rgba(209, 213, 218, 0.3);
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
@@ -44,7 +44,7 @@ export const TileTitle = styled.h3`
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: #0366d6;
+    color: ${({ theme }) => theme.colors.scienceBlue};
     margin: 0;
 `;
 
@@ -68,6 +68,6 @@ export const TileSpan = styled.span`
 export const TileLink = styled.a`
     font-size: 18px;
     line-height: 1.4;
-    color: #0366d6;
+    color: ${({ theme }) => theme.colors.scienceBlue};
     cursor: pointer;
 `;
