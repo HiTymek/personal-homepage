@@ -44,6 +44,7 @@ export const AboutMe = styled.p`
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
+    padding-right: 128px;
 `;
 
 export const Image = styled.img`

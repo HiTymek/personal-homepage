@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     border-radius: 4px;
     padding: 33px;
     margin: 72px 0 72px 0;
+    background-color: ${({ theme }) => theme.color.tileBackground};
 `;
 
 export const Title = styled.h2`
@@ -12,8 +13,8 @@ export const Title = styled.h2`
     font-size: 30px;
     margin: 0;
     padding-bottom: 15px;
-    color: #252525;
-    border-bottom: 1px solid rgba(209, 213, 218, 0.3);;
+    color: ${({ theme }) => theme.color.title};
+    border-bottom: 1px solid ${({ theme }) => theme.color.divider};
 `;
 
 export const List = styled.ul`

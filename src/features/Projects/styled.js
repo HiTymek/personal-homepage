@@ -28,13 +28,13 @@ export const ProjectTiles = styled.section`
 export const SmallTile = styled.div`
     background-color: ${({ theme }) => theme.color.tileBackground}; 
     color: ${({ theme }) => theme.color.text};   
-    border: 6px solid rgba(209, 213, 218, 0.3);
+    border: 6px solid ${({ theme }) => theme.color.divider};
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
     padding: 50px;
 
     &:hover{
-        border: 6px solid rgba(3, 102, 214, 0.2);
+        border: 6px solid ${({ theme }) => theme.color.tileActiveBorder};
         box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
         border-radius: 4px;
     }
