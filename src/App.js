@@ -9,13 +9,13 @@ import SkillList from "./features/SkillList";
 import NextToLearn from "./features/NextToLearn";
 import Projects from "./features/Projects";
 import Footer from "./features/Footer";
-import { selectIsDarkTheme } from "./themeSlice";
+import { selectTheme } from "./themeSlice";
 
 function App() {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
+  const theme = useSelector(selectTheme);
 
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <GlobalStyle />
       <>
         <Container>
