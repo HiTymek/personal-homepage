@@ -1,16 +1,13 @@
-import { useState } from "react";
 import { Button, ButtonContainer } from "./styled";
+import { useDispatch } from "react-redux";
+import { toggleTheme } from "../../themeSlice";
 
 const ThemeButton = () => {
-    const [isActive, setIsActive] = useState(false);
-
-    const onClickButton = () => {
-        setIsActive(current => !current);
-    };
+    const dispatch = useDispatch();
 
     return (
-        <ButtonContainer style={{justifyContent: isActive ? "flex-end" : "flex-start"}}>
-            <Button onClick={onClickButton}></Button>
+        <ButtonContainer>
+            <Button onClick={() => { dispatch(toggleTheme()) }}></Button>
         </ButtonContainer>
     );
 };
