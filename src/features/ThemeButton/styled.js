@@ -26,5 +26,4 @@ export const IconContainer = styled.div`
     ${({ moveToRight }) => !moveToRight && css`
         transform: translate(24px);
     `}
-    
 `;
