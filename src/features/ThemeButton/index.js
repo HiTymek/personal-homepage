@@ -1,14 +1,20 @@
-import { Button, ButtonContainer } from "./styled";
-import { useDispatch } from "react-redux";
-import { toggleTheme } from "../../themeSlice";
+import { ReactComponent as SunIcon } from "./sun.svg";
+import { Button, IconContainer } from "./styled";
+import { useDispatch, useSelector } from "react-redux";
+import { selectTheme, toggleTheme } from "../../themeSlice";
 
 const ThemeButton = () => {
+    const theme = useSelector(selectTheme);
     const dispatch = useDispatch();
 
     return (
-        <ButtonContainer>
-            <Button onClick={() => { dispatch(toggleTheme()) }}></Button>
-        </ButtonContainer>
+        <>
+            <Button onClick={() => { dispatch(toggleTheme()) }}>
+                <IconContainer moveToRight={!theme}>
+                    <SunIcon />
+                </IconContainer>
+            </Button>
+        </>
     );
 };
 

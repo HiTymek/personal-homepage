@@ -1,22 +1,30 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const ButtonContainer = styled.div`
+export const Button = styled.button`
     display: flex;
     align-items: center;
     align-self: flex-end;
     border: 1px solid ${({ theme }) => theme.color.themeButton.border};
     background-color: #e5e5e5;
     border-radius: 150px;
+    padding: 0 0 0 2px;
     width: 50px;
     height: 25px;
+    cursor: pointer;
 `;
 
-export const Button = styled.button`
-    background-color: ${({ theme }) => theme.color.themeButton.background};
-    border: none;
-    margin: 2px;
-    height: 20px;
+export const IconContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
+    height: 20px;
     border-radius: 50%;
-    cursor: pointer;
+    background-color: ${({ theme }) => theme.color.themeButton.background};
+    color: white;
+
+    ${({ moveToRight }) => !moveToRight && css`
+        transform: translate(24px);
+    `}
+    
 `;
