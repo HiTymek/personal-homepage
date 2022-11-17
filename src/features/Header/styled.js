@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import photo from "./photo398w.jpg";
+import photoDesktop from "./profile-image-desktop.png";
+import photoLaptop from "./profile-image-laptop.png";
+import photoTablet from "./profile-image-tablet.png";
 import hireMeButton from "../../common/icons/hireMeButton.png";
 import { device } from "../../theme";
 
@@ -15,20 +17,22 @@ export const Wrapper = styled.header`
 `;
 
 export const Photo = styled.div`
-    background-image: url(${photo});
+    background-image: url(${photoDesktop});
     background-position: 50% 15%;
     background-repeat: no-repeat;
     align-self: center;
     border-radius: 50%;
-    width: 398px;
-    height: 398px;
+    width: 380px;
+    height: 380px;
 
     @media ${device.laptop} {
+        background-image: url(${photoLaptop});
         width: 340px;
         height: 340px;
     };
 
     @media ${device.tablet} {
+        background-image: url(${photoTablet});
         width: 200px;
         height: 200px;
     };
