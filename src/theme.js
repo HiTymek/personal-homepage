@@ -12,6 +12,18 @@ export const colorsName = {
     azure: "#35669E",
 };
 
+export const size = {
+    desktop: "1214px",
+    laptop: "1024px",
+    tablet: "769px",
+};
+
+export const device = {
+    desktop: `(max-width: ${size.desktop})`,
+    laptop: `(max-width: ${size.laptop})`,
+    tablet: `(max-width: ${size.tablet})`,
+};
+
 export const lightTheme = {
     color: {
         primary: colorsName.scienceBlue,
