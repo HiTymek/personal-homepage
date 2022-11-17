@@ -1,5 +1,19 @@
 import styled, { css } from "styled-components";
 
+export const ThemeButtonContainer = styled.div`
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 12px;
+    margin-right: 22px;
+`;
+
+export const Text = styled.span`
+    font-size: 12px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.color.text}
+`;
+
 export const Button = styled.button`
     display: flex;
     align-items: center;
