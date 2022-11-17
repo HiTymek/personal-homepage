@@ -28,7 +28,7 @@ export const TileTitle = styled.h3`
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    color: ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.tileTitle};
     margin: 0;
 
     @media ${device.laptop} {
@@ -69,7 +69,7 @@ export const TileLink = styled.a`
     font-size: 16px;
     word-break: break-word;
     line-height: 1.4;
-    color: ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.links};
     cursor: pointer;
 
     @media ${device.laptop} {

@@ -56,6 +56,7 @@ export const SocialLinks = styled.div`
 `;
 
 export const Link = styled.a`
+    color: ${({ theme }) => theme.color.socialIcons};
     &:hover{
         filter: brightness(160%);
         transition: 0.5s;

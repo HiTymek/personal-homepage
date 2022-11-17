@@ -20,7 +20,7 @@ export const Title = styled.h2`
     margin: 0;
     padding-bottom: 15px;
     color: ${({ theme }) => theme.color.title};
-    border-bottom: 1px solid ${({ theme }) => theme.color.divider};
+    border-bottom: 1px solid ${({ theme }) => theme.color.tileTitleUnderline};
 
     @media ${device.tablet} {
         font-size: 18px;

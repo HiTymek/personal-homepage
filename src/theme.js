@@ -7,6 +7,7 @@ export const colorsName = {
     whiteLilac: "#FBFBFE",
     scienceBlue: "#0366D6",
     tropicalBlue: "#CDE0F7",
+    dogerBlue: "#2188FF",
     tundora: "#414141",
     mercury: "#E5E5E5",
     azure: "#35669E",
@@ -30,13 +31,17 @@ export const lightTheme = {
         body: colorsName.whiteLilac,
         text: colorsName.slateGray,
         title: colorsName.mineShaft,
+        tileTitle: colorsName.scienceBlue,
         tileBackground: colorsName.white,
+        tileTitleUnderline: colorsName.mercury,
         divider: colorsName.mercury,
         tileActiveBorder: colorsName.tropicalBlue,
         themeButton: {
             background: colorsName.slateGray,
             border: colorsName.iron,
         },
+        links: colorsName.scienceBlue,
+        socialIcons: colorsName.mineShaft,
     },
 };
 
@@ -46,12 +51,16 @@ export const darkTheme = {
         body: colorsName.mineShaft,
         text: colorsName.white,
         title: colorsName.white,
+        tileTitle: colorsName.white,
         tileBackground: colorsName.semiDark,
+        tileTitleUnderline: colorsName.white,
         divider: colorsName.tundora,
         tileActiveBorder: colorsName.azure,
         themeButton: {
             background: colorsName.slateGray,
             border: colorsName.iron,
         },
+        links: colorsName.dogerBlue,
+        socialIcons: colorsName.white,
     },
 };

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ReactComponent as Github } from "../../common/icons/github.svg";
+import { ReactComponent as GithubBlue } from "./githubBlue.svg";
 import { fetchProjects, selectProjects, selectStatus } from "./projectsSlice";
 import ProjectTile from "./ProjectTile";
 import {
@@ -22,7 +22,7 @@ const Projects = () => {
     return (
         <>
             <Container>
-                <Github />
+                <GithubBlue />
                 <Header>Portfolio</Header>
                 <SubHeader>My recent projects</SubHeader>
             </Container>
