@@ -1,27 +1,51 @@
 import styled from "styled-components";
 import photo from "./photo398w.jpg";
 import hireMeButton from "../../common/icons/hireMeButton.png";
+import { device } from "../../theme";
 
 export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr; 
     margin-bottom: 63px;
     color: ${({ theme }) => theme.color.text};
+
+    @media ${device.tablet} {
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const Photo = styled.div`
     background-image: url(${photo});
     background-position: 50% 15%;
     background-repeat: no-repeat;
+    align-self: center;
     border-radius: 50%;
     width: 398px;
     height: 398px;
+
+    @media ${device.laptop} {
+        width: 340px;
+        height: 340px;
+    };
+
+    @media ${device.tablet} {
+        width: 200px;
+        height: 200px;
+    };
 `;
 
 export const Content = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 66px;
+
+    @media ${device.laptop} {
+        margin-left: 33px;
+    };
+
+    @media ${device.tablet} {
+        margin-left: 0;
+    };
 `;
 
 export const ThisIs = styled.span`
@@ -29,6 +53,10 @@ export const ThisIs = styled.span`
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;
+
+    @media ${device.tablet} {
+        margin-top: 13px;
+    };
 `;
 
 export const Name = styled.h1`
@@ -37,6 +65,11 @@ export const Name = styled.h1`
     font-size: 38px;
     line-height: 46px;
     margin: 12px 0 35px 0;
+
+    @media ${device.tablet} {
+        margin: 8px 0 16px 0;
+        font-size: 22px;
+    };
 `;
 
 export const AboutMe = styled.p`
@@ -44,11 +77,14 @@ export const AboutMe = styled.p`
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
-    padding-right: 128px;
+
+    @media ${device.tablet} {
+        margin-bottom: 24px;
+    };
 `;
 
 export const Image = styled.img`
     background-image: url(${hireMeButton});
     width: 154px;
-    height: 49px
+    height: 49px;
 `;
