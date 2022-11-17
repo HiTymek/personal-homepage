@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "../../theme";
 
 export const ThemeButtonContainer = styled.div`
     display: flex;
@@ -11,7 +12,11 @@ export const ThemeButtonContainer = styled.div`
 export const Text = styled.span`
     font-size: 12px;
     font-weight: 700;
-    color: ${({ theme }) => theme.color.text}
+    color: ${({ theme }) => theme.color.text};
+
+    @media ${device.tablet} {
+        display: none;
+    }
 `;
 
 export const Button = styled.button`

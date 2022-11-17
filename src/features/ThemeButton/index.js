@@ -10,6 +10,7 @@ const ThemeButton = () => {
     return (
         <>
             <ThemeButtonContainer>
+                <Text>DARK MODE {theme ? "ON" : "OFF"}</Text>
                 <Button onClick={() => { dispatch(toggleTheme()) }}>
                     <IconContainer moveToRight={!theme}>
                         <SunIcon />
