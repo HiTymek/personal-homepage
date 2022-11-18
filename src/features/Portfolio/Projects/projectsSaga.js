@@ -8,7 +8,7 @@ export function* watchFetchProjectsHandler() {
         const projects = yield call(getProjects);
         yield put(fetchProjectsSuccess(projects));
     } catch (error) {
-        yield put(fetchProjectsError);
+        yield put(fetchProjectsError());
     }
 };
 

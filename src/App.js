@@ -7,9 +7,9 @@ import { Container } from "./features/Container/styled";
 import BigTile from "./common/BigTile/index";
 import SkillList from "./features/SkillList";
 import NextToLearn from "./features/NextToLearn";
-import Projects from "./features/Projects";
 import Footer from "./features/Footer";
 import { selectTheme } from "./themeSlice";
+import Portfolio from "./features/Portfolio";
 
 function App() {
   const theme = useSelector(selectTheme);
@@ -28,7 +28,7 @@ function App() {
             title="What I want to learn next 🚀"
             content={<NextToLearn />}
           />
-          <Projects />
+          <Portfolio />
           <Footer />
         </Container>
       </>

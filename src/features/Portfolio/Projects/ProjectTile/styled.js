@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../../theme";
+import { device } from "../../../../theme";
 
 export const Tile = styled.div`
     background-color: ${({ theme }) => theme.color.tileBackground}; 
