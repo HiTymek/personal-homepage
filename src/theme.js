@@ -42,6 +42,7 @@ export const lightTheme = {
         },
         links: colorsName.scienceBlue,
         socialIcons: colorsName.mineShaft,
+        buttonText: colorsName.white,
     },
 };
 
@@ -62,5 +63,6 @@ export const darkTheme = {
         },
         links: colorsName.dogerBlue,
         socialIcons: colorsName.white,
+        buttonText: colorsName.white,
     },
 };
