@@ -2,7 +2,6 @@ import styled from "styled-components";
 import photoDesktop from "./profile-image-desktop.png";
 import photoLaptop from "./profile-image-laptop.png";
 import photoTablet from "./profile-image-tablet.png";
-import hireMeButton from "../../common/icons/hireMeButton.png";
 import { device } from "../../theme";
 
 export const Wrapper = styled.header`
@@ -87,8 +86,23 @@ export const AboutMe = styled.p`
     };
 `;
 
-export const Image = styled.img`
-    background-image: url(${hireMeButton});
+export const HireMeLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     width: 154px;
     height: 49px;
+    text-decoration: none;
+    background-color: ${({ theme }) => theme.color.primary};
+    color: ${({ theme }) => theme.color.buttonText};
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 16px;
+
+    :hover{
+        filter: brightness(130%);
+        transition-duration: 1s;
+    };
 `;

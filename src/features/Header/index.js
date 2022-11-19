@@ -1,4 +1,5 @@
 import ThemeButton from "../ThemeButton/index";
+import { ReactComponent as Message } from "./message.svg";
 
 import {
     Wrapper,
@@ -7,7 +8,7 @@ import {
     Content,
     Name,
     AboutMe,
-    Image
+    HireMeLink,
 } from "./styled";
 
 const Header = () => (
@@ -19,9 +20,9 @@ const Header = () => (
                 <ThisIs>THIS IS</ThisIs>
                 <Name>Tymoteusz Wójcik</Name>
                 <AboutMe>👨🏻‍💼👨🏻‍💻 I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities. </AboutMe>
-                <a href="mailto:timmywojcik@gmail.com">
-                    <Image />
-                </a>
+                <HireMeLink href="mailto:timmywojcik@gmail.com">
+                    <Message /> Hire Me
+                </HireMeLink>
             </Content>
         </Wrapper>
     </>
