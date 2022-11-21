@@ -3,11 +3,11 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
-    }
+    };
 
     *, ::after, ::before {
         box-sizing: inherit;
-    }
+    };
 
     body {
         margin: 20px;
@@ -15,5 +15,5 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         background-color: ${({ theme }) => theme.color.body};
-    }
+    };
 `;
